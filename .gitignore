@@ -1,0 +1,17 @@
+### AL ###
+# Template for AL projects for Dynamics 365 Business Central
+
+# Launch configuration folder
+.vscode/
+
+# Extension App file
+*.app
+
+# Rapid Application Development file
+rad.json
+
+# Node.js dependencies
+node_modules/
+
+# Public CSS folder
+public/css/*

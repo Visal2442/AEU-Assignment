@@ -1,0 +1,53 @@
+// Import Bootstrap SCSS
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// Slideshow
+
+.carousel-inner img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-indicators button {
+  background-color: gray;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+hr {
+  color: #d0cccc;
+}
+.see-more-btn {
+  border: 2px solid #007bff;
+  border-radius: 20px;
+
+  &:hover {
+    background: #007bff;
+    color: white;
+  }
+}
+
+.button-primarys{
+  padding: 3px 20px;
+  border-radius: 20px;
+  background: #007bff;
+  color: #ffffff;
+}
+.button-secondary {
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  padding: 3px 20px;
+
+  &:hover {
+    background: #007bff;  
+    color: white;
+  }
+}

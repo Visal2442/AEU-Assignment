@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>Computer site</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <header class="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark d-block">
+      <div class="container d-lg-flex">
+        <div class="logo d-flex justify-content-between">
+          <img class="img h-auto" src="./image/logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-center nav-container" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/brand.html">Brand</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/contact_us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./page/about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <i class="fas fa-heart text-secondary"></i>
+            <span class="badge">0</span>
+          </div>
+          <div class="icon">
+            <i class="fas fa-shopping-cart text-secondary"></i>
+            <span class="cart">0</span>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Banner -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <!-- Slides -->
+    <div class="banner-container carousel-inner">
+      <div class="carousel-item">
+        <img src="./image/banner-1.png" class="d-block w-100 h-auto" alt="Slide 1">
+      </div>
+      <div class="carousel-item active banner-2-container">
+        <div class="row p-5 banner-2">
+          <div class="banner-left col-sm-6 d-flex flex-column align-items-center justify-content-center">
+            <div>
+              <h1 class="fw-bold">Explore Latest Computer.</h1>
+              <p>Effordable price for you. Buy your favorite one right now !</p>
+              <div class="btn-container">
+                <button class="btn btn-light learn-more-btn">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="banner-right col-12 col-sm-6">
+            <img src="./image/test-banner-2.png" class="banner-img-2 w-100 h-auto" alt="Slide 2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" arix`xa-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- ======== CATEGORIES ========== -->
+  <div class="categories container my-4">
+    <div class="row text-center text-sm-start align-items-center pb-3 px-3">
+      <h5 class="col-11 fw-bold">Categories</h5>
+    </div>
+    <hr class="m-0">
+    <div class="category-grid mt-4">
+      <div class="category-card">
+        <a href="./page/viewmore_desktop.html"> <img src="./image/desk_dao.png" alt="Desktops">
+        </a>
+        <h5>Desktops</h5>
+        <p>Powerful performance for home and office.</p>
+      </div>
+      <div class="category-card">
+        <a href="./page/viewmore_tabtop.html"> <img src="./image/laa.png" alt="Laptops"></a>
+        <h5>Laptops</h5>
+        <p>Portable computing for work and play.</p>
+      </div>
+      <div class="category-card">
+        <a href="./page/shop.html"><img src="./image/gamingPc.png" alt="Gaming PCs"></a>
+        <h5>Gaming PCs</h5>
+        <p>Ultimate gaming experience with high specs.</p>
+      </div>
+      <div class="category-card">
+        <a href="./page/viewmore_desktop.html"><img src="./image/monitor.png" alt="Docking Stations"></a>
+        <h5>Monitors</h5>
+        <p>High-resolution displays for enhanced viewing experiences.</p>
+      </div>
+      <div class="category-card">
+        <a href="./page/viewmore_tabplet.html"><img src="./image/tample.png" alt="Tablets"></a>
+        <h5>Tablets</h5>
+        <p>Versatile devices for work, play, and everything in between.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="d-flex justify-content-center">
+    <button id="defaultOpen" class="tablink" onclick="openPage('Saller', this, '#ec7063')">Best Product</button>
+    <button class="tablink" onclick="openPage('Fealtured', this, '#ec7063')">Fealtured</button>
+    <button class="tablink" onclick="openPage('new-arrival', this, '#ec7063')">New Arrival</button>
+  </div> -->
+
+  <!-- <div id="Saller" class="tabcontent"> -->
+  <!-- ========= BEST PRODUCT ========== -->
+  <div class="best-product-container container my-4">
+
+    <div class="text-center text-sm-start py-3 px-3 ">
+      <h5 class="fw-bold">Best Products</h5>
+    </div>
+    <hr class="m-0">
+    <!-- NEW CARD  -->
+    <div class="row card-new-container d-flex gap-3">
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="text-end">
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="../image/asus_rog.jpg" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary">
+            <a href="./page/detail.html" class="text-white">More Detail</a>
+          </button>
+        </div>
+
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="new-price">$457.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Asus Aspire Lite AL16-52P-38YA-Ci3-1315U-8GB-SSD512G-16......</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="text-end">
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="./image/lenovo_yogo.png" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="new-price">$357.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="text-end">
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="./image/lal.png" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary">More Detail</button>
+        </div>
+        <p class="product-price my-2">
+          <span class="new-price">$257.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="text-end">
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="./image/lutu.png" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="new-price">$557.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Asus Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="text-end">
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="./image/desk_aoc.png" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="new-price">$357.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- </div> -->
+
+  <div id="Fealtured" class="tabcontent">
+    <!-- ========= DESK TOP AND MONITOR ========== -->
+    <div class="best-product-container container my-4">
+
+      <div class="row align-items-center py-3 px-3">
+        <h5 class="col-11 fw-bold">Fealtured Product</h5>
+      </div>
+      <hr class="m-0">
+      <!-- NEW CARD  -->
+      <div class="row card-new-container d-flex gap-3">
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="image/dla.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$857.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">LED Monitor Dell 24" SE2425H With FHD (1920x1080) 75Hz...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="image/lly_1738.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$657.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">LED Monitor Dell 24" SE2425H With FHD (1920x1080) 75Hz...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="image/desk_dao.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$427.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">LED Monitor Dell 24" SE2425H With FHD (1920x1080) 75Hz...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="image/monitor_desk.png" alt="Laptop" class="product-image" style="height: 170px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$957.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">LED Monitor Dell 24" SE2425H With FHD (1920x1080) 75Hz...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="image/monitor_desk_3.png" alt="Laptop" class="product-image" style="height: 169px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$57.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">LED Monitor Dell 24" SE2425H With FHD (1920x1080) 75Hz...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/tabplet_7.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$457.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/desk_dao.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$757.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/lenovo_pad.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$257.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/dda.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$337.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/lal.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$357.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Acer Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="new-arrival" class="tabcontent">
+    <!-- ========= TABPLET ========== -->
+    <div class="best-product-container container my-4">
+      <div class=" d-flex align-items-center py-3 px-3 ">
+        <h5 class=" fw-bold">Tabplet</h5>
+      </div>
+      <hr class="m-0">
+      <!-- NEW CARD  -->
+      <div class="row card-new-container d-flex gap-3">
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge ">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/tabplet_1.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$390.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4 mt-2">
+            <img src="./image/tabplet_2.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$257.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/tabplet_3.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$457.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/dla.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$477.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/tabplet_5.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$487.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/dis_desk_gamming.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$487.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/tabplet_7.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$487.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/gamming_4.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$487.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="./image/leg_white.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$487.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="discount-badge">New</span>
+            <i class="fa fa-heart fav-icon text-secondary"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/tabplet_10.png" alt="Laptop" class="product-image" style="height: 145px;">
+            <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-price my-2">
+            <span class="new-price">$487.00</span>
+          </p>
+          <div class="star-rating my-2 justify-content-center">
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+            <i class="fa fa-star "></i>
+          </div>
+          <p class="product-name mt-3 fw-bold mb-0">Lenovo YOGA 7 2in1 14IML9 ULT5_125H-16GB- 1TB SSD-14"...</p>
+
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- end NEW CARD  -->
+    </div>
+
+
+  </div>
+
+  <!-- ======= DISCOUNT BANNER ========= -->
+  <div class="container p-0">
+    <img src="./image/discount-1.png" style="width: 100%;" />
+  </div>
+
+  <!-- =========== Discount Products ======= -->
+  <div class="best-product-container container my-4">
+
+    <div class="row align-items-center text-center text-sm-start py-3 px-3">
+      <h5 class="col-11 fw-bold">Discount</h5>
+
+    </div>
+    <hr class="m-0">
+    <!-- NEW CARD  -->
+    <div class="row card-new-container d-flex gap-3">
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span class="discount-badge">-$6.00</span>
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="image/asus_rog.jpg" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="old-price">$466.00</span>
+          <span class="new-price text-danger">$460.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star "></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Asus Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span class="discount-badge">-$6.00</span>
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="image/ldi_1235.png" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="old-price">$590.00</span>
+          <span class="new-price text-danger">$584.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Asus Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span class="discount-badge">-$6.00</span>
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="image/lly_1738.png" alt="Laptop" class="product-image">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="old-price">$486.00</span>
+          <span class="new-price text-danger">$480.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Asus Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-center align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span class="discount-badge">-$6.00</span>
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="image/dis_desk_gamming.png" alt="Laptop" class="product-image" style="height: 165px;">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="old-price">$896.00</span>
+          <span class="new-price text-danger">$890.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star text-warning "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Asus Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-center align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <!-- Discount Badge -->
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span class="discount-badge">-$6.00</span>
+          <i class="fa fa-heart fav-icon text-secondary"></i>
+        </div>
+
+        <!-- Product Image -->
+        <div class="product-image-wrapper mb-4">
+          <img src="image/gamming_4.png" alt="Laptop" class="product-image" style="height: 165px;">
+          <button class="more-detail-btn btn btn-primary"><a href="./page/detail.html">More Detail</a></button>
+        </div>
+        <!-- Product Details -->
+        <p class="product-price my-2">
+          <span class="old-price">$336.00</span>
+          <span class="new-price text-danger">$330.00</span>
+        </p>
+        <div class="star-rating my-2 justify-content-center">
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+          <i class="fa fa-star "></i>
+        </div>
+        <p class="product-name mt-3 fw-bold mb-0">Asus Aspire Lite AL16-52P-53QG-Ci5-1334U-16GB-SSD512G-16...</p>
+
+        <!-- Action Buttons -->
+        <div class="action-btns d-flex justify-content-center align-items-center mt-3">
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="./image/about_us_pc.png" alt="About Us Image" class="img-fluid rounded-lg">
+        </div>
+        <div class="col-lg-6">
+          <h2>About</h2>
+          <p>We Maxus Infotech, located at Malad West, Mumbai, Maharashtra, with the intention of dealing in premium
+            quality computers, laptops and accessories available to customers at affordable rates. All our electronics
+            are sourced from premium brands. Our skilled and trained technicians and engineers strive to provide the
+            best computer laptop repair and hire services. Moreover, we strive to ensure the total satisfaction of our
+            customers, and thus, provide them with international standard quality products at most economical prices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== COMMENTS ======== -->
+  <div class="categories container my-4">
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Customer Recommendations</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm cus">
+            <img src="./image/comstomer1.png" alt="Customer 1" class="card-img-top rounded-circle mx-auto mt-3"
+              style="width: 100px; height: 100px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Jole Name</h5>
+              <p class="card-text italic text-muted">“Have a high-performance computer that works well and gets me
+                through
+                my tasks easily.”</p>
+              <div class="star-rating my-2 justify-content-center">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm cus">
+            <img src="./image/customer_2.png" alt="Customer 2" class="card-img-top rounded-circle mx-auto mt-3"
+              style="width: 100px; height: 100px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Camunter</h5>
+              <p class="card-text italic text-muted">“I have a fantastic computer that meets all my needs and more.”</p>
+              <div class="star-rating my-2 justify-content-center">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm cus">
+            <img src="./image/customer_3.png" alt="Customer 3" class="card-img-top rounded-circle mx-auto mt-3"
+              style="width: 100px; height: 100px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Join Name</h5>
+              <p class="card-text italic text-muted">“My computer is perfect for all my tasks, from work to gaming.”</p>
+              <div class="star-rating my-2 justify-content-center">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Section 1: ATTIRE -->
+        <div class="col-md-3 mb-3">
+          <img class="img" src="./image/logo.png" alt="" style="width: 150px; height: auto;">
+          <p>Opening Hours: Monday to Sunday, 8:00 AM to 5:30 PM.</p>
+        </div>
+        <!-- Section 2: Links -->
+        <div class="col-md-3 mb-3">
+          <h4>Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="./page/brand.html" class="text-white text-decoration-none">Brand</a></li>
+            <li><a href="./page/shop.html" class="text-white text-decoration-none">Gaming</a></li>
+            <li><a href="./page/about.html" class="text-white text-decoration-none">Blog</a></li>
+            <li><a href="./page/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+            <li><a href="./page/about.html" class="text-white text-decoration-none">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Section 3: Contact Us -->
+        <div class="col-md-3 mb-3">
+          <h4>Contact Us</h4>
+          <p>123 Street, City, Country</p>
+          <p>Email: support@attire.com</p>
+          <p>Phone: +123 456 789</p>
+        </div>
+        <!-- Section 4: Follow Us -->
+        <div class="col-md-3 mb-3">
+          <h4>Follow Us</h4>
+          <p>Pay with us on:</p>
+          <div class="d-flex justify-content-center justify-content-md-start gap-2">
+            <img src="./image/wing.png" alt="Wing" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="./image/aba.png" alt="ABA" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="./image/amk.png" alt="AMK" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="./image/ac.png" alt="AC" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="./image/lolc.png" alt="LOLC" class="img-fluid" style="width: 60px; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Link Bootstrap JavaScript -->
+<script src="./js/main.js"></script>
+<script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<!-- Optional JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>

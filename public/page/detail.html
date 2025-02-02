@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Product</title>
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <header class="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark d-block">
+      <div class="container d-lg-flex">
+        <div class="logo d-flex justify-content-between">
+          <img class="img h-auto" src="../image/logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-center nav-container" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./brand.html">Brand</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact_us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icons">
+          <div class="icon">
+            <i class="fas fa-heart text-secondary"></i>
+            <span class="badge">0</span>
+          </div>
+          <div class="icon">
+            <i class="fas fa-shopping-cart text-secondary"></i>
+            <span class="cart">0</span>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container my-4">
+    <div class="row product-container">
+      <div class="d-flex align-items-center mb-3">
+        <button class="btn btn-light me-4 back-detail-btn" onclick="window.history.back()">
+          <i class="fas fa-arrow-left me-2"></i> Back
+        </button>
+      </div>
+
+      <div class="col-md-6">
+        <div class="image-wrapper">
+          <img src="../image/desk_dao.png" alt="Gaming Desktop" class="product-image" id="mainImage">
+        </div>
+        <div class="d-flex ms-4">
+          <div class="image" onmouseover="changeMainImage('../image/desk_dao.png')">
+            <img src="../image/desk_dao.png" alt="Gaming Desktop" class="product-image">
+          </div>
+          <div class="image" onmouseover="changeMainImage('../image/desk_aoc.png')">
+            <img src="../image/desk_aoc.png" alt="Gaming Desktop" class="product-image">
+          </div>
+          <div class="image" onmouseover="changeMainImage('../image/dla.png')">
+            <img src="../image/dla.png" alt="Gaming Desktop" class="product-image">
+          </div>
+          <div class="image" onmouseover="changeMainImage('../image/desk_hov.png')">
+            <img src="../image/desk_hov.png" alt="Gaming Desktop" class="product-image">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4">
+        <h2 class="product-name">High-Performance Gaming Desktop</h2>
+        <p class="product-description">Experience lightning-fast gaming with our top-of-the-line gaming desktop equipped
+          with the latest hardware and cutting-edge technology.</p>
+        <div class="price">
+          <span class="original-price">$1,499.00</span>
+          <span>$1,199.00</span>
+        </div>
+        <hr>
+        <h4>Features</h4>
+        <ul class="specification-list">
+          <li><strong>Ultra-Fast Performance:</strong> Powered by the latest Intel i7 processor.</li>
+          <li><strong>Stunning Graphics:</strong> Equipped with NVIDIA RTX 3060 for immersive gaming.</li>
+          <li><strong>Customizable RGB Lighting:</strong> Personalize your setup with vibrant RGB.</li>
+          <li><strong>Advanced Cooling System:</strong> Keep your system cool during intense gaming.</li>
+          <li><strong>Ample Storage:</strong> 1TB SSD for quick load times and plenty of space.</li>
+        </ul>
+        <hr>
+        <h4>Specifications</h4>
+        <ul class="specification-list">
+          <li><strong>Processor:</strong> Intel i7-11700K</li>
+          <li><strong>RAM:</strong> 16GB DDR4</li>
+          <li><strong>Graphics Card:</strong> NVIDIA RTX 3060</li>
+          <li><strong>Storage:</strong> 1TB SSD</li>
+          <li><strong>Cooling:</strong> Liquid Cooling System</li>
+          <li><strong>Operating System:</strong> Windows 10 Home</li>
+        </ul>
+        <hr>
+        <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <!-- <button class="btn btn-outline-secondary" onclick="decrement()">-</button> -->
+            <input type="number" id="quantity" min="1" value="1" class="form-control mx-1"
+              style="width: 60px; text-align: center;">
+            <!-- <button class="btn btn-outline-secondary" onclick="increment()">+</button> -->
+          </div>
+          <div class="ms-4 view-detail-btn">
+            <button class="button-primarys">Buy Now</button>
+            <button class="button-secondary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="best-product-container my-4">
+
+      <div class="row align-items-center text-center text-sm-start py-2 px-3">
+        <h5 class="col-11 fw-bold">Related Product</h5>
+      </div>
+      <hr class="m-0">
+      <!-- NEW CARD  -->
+      <div class="row card-new-container d-flex gap-3">
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/desk_dao.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary">More Detail</button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-name mt-3 fw-bold mb-0">Quisque mi est, blandit sed...</p>
+          <p class="product-price my-2">
+            <span class="new-price">$857.00</span>
+          </p>
+          <p class="product-description "> augue dignissim porta. Nullam m...</p>
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/gamming_4.png" alt="Laptop" class="product-image" style="height: 165px;">
+            <button class="more-detail-btn btn btn-primary">More Detail</button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-name mt-3 fw-bold mb-0">Quisque mi est, blandit sed...</p>
+          <p class="product-price my-2">
+            <span class="new-price">$657.00</span>
+          </p>
+          <p class="product-description "> augue dignissim porta. Nullam m...</p>
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/desk_dao.png" alt="Laptop" class="product-image">
+            <button class="more-detail-btn btn btn-primary">More Detail</button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-name mt-3 fw-bold mb-0">Quisque mi est, blandit sed...</p>
+          <p class="product-price my-2">
+            <span class="new-price">$427.00</span>
+          </p>
+          <p class="product-description "> augue dignissim porta. Nullam m...</p>
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/monitor_desk.png" alt="Laptop" class="product-image" style="height: 170px;">
+            <button class="more-detail-btn btn btn-primary">More Detail</button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-name mt-3 fw-bold mb-0">Quisque mi est, blandit sed...</p>
+          <p class="product-price my-2">
+            <span class="new-price">$957.00</span>
+          </p>
+          <p class="product-description "> augue dignissim porta. Nullam m...</p>
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <!-- Discount Badge -->
+          <div class="text-end">
+            <i class="fa fa-heart fav-icon"></i>
+          </div>
+
+          <!-- Product Image -->
+          <div class="product-image-wrapper mb-4">
+            <img src="../image/monitor_desk_3.png" alt="Laptop" class="product-image" style="height: 169px;">
+            <button class="more-detail-btn btn btn-primary">More Detail</button>
+          </div>
+          <!-- Product Details -->
+          <p class="product-name mt-3 fw-bold mb-0">Quisque mi est, blandit sed...</p>
+          <p class="product-price my-2">
+            <span class="new-price">$57.00</span>
+          </p>
+          <p class="product-description "> augue dignissim porta. Nullam m...</p>
+          <!-- Action Buttons -->
+          <div class="action-btns d-flex justify-content-evenly align-items-center mt-3">
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Section 1: ATTIRE -->
+        <div class="col-md-3 mb-3">
+          <img class="img" src="./image/logo.png" alt="" style="width: 150px; height: auto;">
+          <p>Opening Hours: Monday to Sunday, 8:00 AM to 5:30 PM.</p>
+        </div>
+        <!-- Section 2: Links -->
+        <div class="col-md-3 mb-3">
+          <h4>Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="./brand.html" class="text-white text-decoration-none">Brand</a></li>
+            <li><a href="./shop.html" class="text-white text-decoration-none">Shop</a></li>
+            <li><a href="./blog.html" class="text-white text-decoration-none">Blog</a></li>
+            <li><a href="./contact_us.html" class="text-white text-decoration-none">Contact Us</a></li>
+            <li><a href="./about.html" class="text-white text-decoration-none">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Section 3: Contact Us -->
+        <div class="col-md-3 mb-3">
+          <h4>Contact Us</h4>
+          <p>123 Street, City, Country</p>
+          <p>Email: support@attire.com</p>
+          <p>Phone: +123 456 789</p>
+        </div>
+        <!-- Section 4: Follow Us -->
+        <div class="col-md-3 mb-3">
+          <h4>Follow Us</h4>
+          <p>Pay with us on:</p>
+          <div class="d-flex justify-content-center justify-content-md-start gap-2">
+            <img src="../image/wing.png" alt="Wing" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="../image/aba.png" alt="ABA" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="../image/amk.png" alt="AMK" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="../image/ac.png" alt="AC" class="img-fluid" style="width: 60px; height: auto;">
+            <img src="../image/lolc.png" alt="LOLC" class="img-fluid" style="width: 60px; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="../js/main.js"></script>
+<script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
