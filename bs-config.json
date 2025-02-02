@@ -1,6 +1,6 @@
 {
     "port": 81,
     "server": {
-        "baseDir": "public"
+        "baseDir": [".", "public"]
     }
 }
